@@ -28,7 +28,12 @@ gsap.to(".flestlm", {
           onUpdate: function (prog) {
             setScroll(prog.progress + index);
           },
-        });
+          scrollSnapping: true,
+          scrollSpeed: 6,
+          touchSpeed: 6,
+          damping: 7,  });
       });
     },
   });
+
+  
